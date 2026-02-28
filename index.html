@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Les trois lois de la thermodynamique</title>
+        <meta name="description" content="Présentation simplifiée des trois lois de la thermodynamique.">
+    </head>
+
+    <body>
+        <a href="#contenu-principal" class="skip-link">
+            Aller au contenu principal
+        </a>
+
+        <header id="top">
+            <h1>Les trois lois de la thermodynamique.</h1>
+            <p>Petite présentation des lois qui fondent la thermodynamique, leur énoncé, 
+                leurs expression mathématique et leur importance dans le monde qui nous entoure.</p>
+
+            <nav aria-label="Navigation principale">
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#loi1">Première loi : principe de la conservation de l'énergie</a></li>
+                    <li><a href="#loi2">Deuxième loi : principe de l'évolution de l'énergie</a></li>
+                    <li><a href="#loi3">Troisième loi : principe de Nernst</a></li>
+                    <li><a href="#loi0">Bonus : principe 0</a></li>
+                    <li><a href="#conclusion">Conclusion</a></li>
+                    <li><a href="#ref">Références</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="contenu-principal">
+            <article>
+                <section aria-labelledby="introduction">
+                    <h2 id="introduction">Introduction</h2>
+                    <p>La thermodynamique est née aux environs des années 1820, 
+                        soit au début de l'ère industrielle, et découle de la nécessité d'expliquer et 
+                        de comprendre la relation entre les phénomènes thermiques et dynamiques des premières machines.</p>
+                    <p>Le domaine a rapidement dépassé son premier champ d'étude puisque 
+                        qu'il a fini par compléter d'autres champs de la physique tels que la mécanique, 
+                        l'électromagnétisme, l'optique ou encore l'astrophysique, 
+                        mais joue aussi un rôle majeur dans les domaines tels que la chimie et la biologie 
+                        qui eux mêmes découle aussi de la physique en général.</p>
+
+                    <p>Il existe trois grands principes qui la fondent :</p>
+
+                    <ol>
+                        <li>premier principe : principe de la conservation de l'énergie, avec l'introduction d'une fonction de 
+                            l'énergie interne U ;</li>
+                        <li>deuxième principe : principe de l'évolution de l'énergie, avec l'introduction de l'entropie S ;</li>
+                        <li>troisième principe : principe de Nernst, moins connue que la deux première 
+                            mais elle permet d'éviter certaines absurdité dans la compréhension des systèmes thermodynamique. 
+                            Nernst nous dit : 
+                            <figure>
+                                <blockquote lang="de">“Es ist unmöglich, durch eine endliche Anzahl von Prozessen den absoluten Nullpunkt 
+                            der Temperatur zu erreichen.”
+                                </blockquote> 
+                                <figcaption>
+                            soit : 
+                            “Il est impossible d'atteindre le zéro absolu de la température par un nombre fini de transformations.” ;
+                                </figcaption>
+                            </figure></li>
+                    </ol>
+
+                    <p>On peut aussi rajouter le principe zéro qui nous dit que si deux systèmes sont chacun en équilibre 
+                        thermique avec un troisième, alors ils sont en équilibre thermique entre eux.</p>
+                    <p>Nous allons voir en quoi consiste tous ses principes.</p>
+                    <a href="#top" aria-label="Retour en haut de la page">
+                        <span aria-hidden="true">&uArr; Retour</span>
+                    </a>
+                </section>
+
+                <section aria-labelledby="loi1">
+                    <h2 id="loi1">Premier principe de la thermodynamique : la conservation de l"énergie</h2>
+                    <h3>Enoncé</h3>
+                    <p>Pour tout système fermé, on peut définir une fonction d'état U, extensive, 
+                        appelé <dfn>énergie interne</dfn>, telle que l'énergie totale Ɛ se conserve, 
+                        donc sans création d'énergie ni destruction. La définition de l'énergie totale est : </p>
+
+                    <math display="block">
+                        <mi>Ɛ</mi>
+                        <mo>=</mo>
+                        <msubsup>
+                            <mi>Ɛ</mi>
+                            <mi>k</mi>
+                            <mi>M</mi>
+                        </msubsup>
+                        <mo>+</mo>
+                        <msub>
+                            <mi>Ɛ</mi>
+                            <mn>p, ext</mn>
+                        </msub>
+                        <mo>+</mo>
+                        <mi>U</mi>
+                    </math>
+
+                    <ul>
+                        <li>
+                            <p>
+                                <math>
+                                    <msubsup>
+                                        <mi>Ɛ</mi>
+                                        <mi>k</mi>
+                                        <mi>M</mi>
+                                    </msubsup>
+                                </math>
+                                correspond à l'énergie cinétique macroscopique : 
+                                <math>
+                                    <msubsup>
+                                        <mi>Ɛ</mi>
+                                        <mi>k</mi>
+                                        <mi>M</mi>
+                                    </msubsup>
+                                    <mo>=</mo>
+                                    <munder>
+                                        <mo>∑</mo>
+                                        <mrow>
+                                            <mi>i</mi>
+                                        </mrow>
+                                    </munder>
+                                    <msub>
+                                        <mi>m</mi>
+                                        <mn>i</mn>
+                                    </msub>
+                                    <msubsup>
+                                        <mi>v</mi>
+                                        <mn>i</mn>
+                                        <mn>2</mn>
+                                    </msubsup>
+                                    <mo>/</mo>
+                                    <mn>2</mn>
+                                </math>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <math>
+                                    <msub>
+                                        <mi>Ɛ</mi>
+                                        <mrow>
+                                            <mi>p</mi>
+                                            <mo>,</mo>
+                                            <mi>ext</mi>
+                                        </mrow>
+                                    </msub>
+                                </math>
+                                correspond à l'énergie potentielle associée aux forces extérieures
+                            </p>
+                        </li>
+                    </ul>
+                    <p>Pour un système isolé, la variation de l'énergie totale est nulle : 
+                        <math>
+                            <mi>&#x394;Ɛ</mi>
+                            <mo>=</mo>
+                            <mi>0</mi>
+                        </math>
+                    </p>
+
+                    <h3>Explication de l'énoncé</h3>
+                    <p>Pour bien comprendre l'énoncé du premier principe, il faut expliquer quelques points importants.</p>
+
+                    <h4>Système thermodynamique</h4>
+                    <p>Un système est une portion, un volume ou une zone de l'univers que l'on isole du reste avec des 
+                        frontières matérielles ou non et est aussi définie par l'échange ou non avec l'extérieur de 
+                        matière ou d'énergie.<br />
+                        On distingue trois types de système : </p>
+                    <ul>
+                        <li>système ouvert : la frontière permet l'échange de matière et d'énergie avec le milieu extérieur 
+                            (ex. : eau qui boue dans une casserole, tout être vivant, une bougie) ;</li>
+                        <li>système fermé : la frontière permet l'échange d'énergie mais plus de matière avec le milieu extérieur 
+                            (ex. : une bouteille d'eau fermée, une pile, un réfrigérateur) ;</li>
+                        <li>système isolé : la frontière n'échange ni matière ni énergie avec le milieu extérieur, le meilleur 
+                            exemple pour ce genre de système reste l'univers qui par principe est isolé ;</li>
+                    </ul>
+                    <p>Il faut aussi ajouter que définir le système est le premier pas dans la résolution d'un problème en thermodynamique.</p>
+
+                    <h4>La fonction d'état</h4>
+
+                    <p>La fonction d'état est une fonction de variables d'état, c'est-à-dire des variables qui définissent 
+                        l'état d'un système en équilibre thermodynamique, elles ne changent pas dans le temps tant que 
+                        le système reste en équilibre et sont indépendantes du chemin suivi pour atteindre l'équilibre.
+                        <br />
+                        Par exemple, l'énergie interne U dépend de la température T, de la pression p et du volume V, on le notera : 
+                    </p>
+                    <math display="block">
+                        <mi>U</mi>
+                        <mo>&ApplyFunction;</mo>
+                        <mrow>
+                            <mo>(</mo>
+                            <mi>T</mi>
+                            <mo>,</mo>
+                            <mi>p</mi>
+                            <mo>,</mo>
+                            <mi>V</mi>
+                            <mo>)</mo>
+                        </mrow>
+                    </math>
+                    
+                    <h4>Une valeur extensive ou intensive ?</h4>
+                    <p>La fonction d'état U est une valeur que l'on dit extensive, 
+                        mais il faut savoir qu'il existe aussi des valeurs intensives et la 
+                        différence entre les deux est très simple : </p>
+                    <ul>
+                        <li>extensive : les valeurs extensives sont des valeurs qui dépendent de la taille et de la quantité 
+                            de matière du système, comme par exemple le volume V ou la masse m. On dit aussi qu'elle sont additives ; </li>
+                        <li>intensive : les valeurs intensives sont des valeurs qui sont indépendantes de la taille du système, comme par 
+                            exemple la température T, ajouter de l'eau à 20°C dans une casserole d'eau à 20°C ne change pas la température. 
+                            Elle ne sont donc pas additives ;</li>
+                    </ul>
+                    <p>Donc dans notre cas de l'énergie interne U, on voit bien qu'elle est extensive car elle dépend de la variable V 
+                        elle même extensive.</p>
+
+                    <h3>Bilan énergétique et application</h3>
+                    <h4>Bilan énergétique</h4>
+                    <p>Le bilan énergétique du premier principe de la thermodynamique entre deux temps donnés s'écrit :</p>
+                    <math display="block">
+                        <mi>&#x394;</mi>
+                        <mo>&ApplyFunction;</mo>
+                        <mrow>
+                            <mo>(</mo>
+                            <msubsup>
+                                <mi>Ɛ</mi>
+                                <mn>k</mn>
+                                <mn>M</mn>
+                            </msubsup>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>Ɛ</mi>
+                                <mrow>
+                                    <mi>p</mi>
+                                    <mo>,</mo>
+                                    <mi>ext</mi>
+                                </mrow>
+                            </msub>
+                            <mo>+</mo>
+                            <mi>U</mi>
+                            <mo>)</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mi>W</mi>
+                        <mo>+</mo>
+                        <mi>Q</mi>
+                    </math>
+
+                    <p>sous forme différentielle on a : </p>
+                    <math display="block">
+                        <mi>d</mi>
+                        <mo>&ApplyFunction;</mo>
+                        <mrow>
+                            <mo>(</mo>
+                            <msubsup>
+                                <mi>Ɛ</mi>
+                                <mn>k</mn>
+                                <mn>M</mn>
+                            </msubsup>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>Ɛ</mi>
+                                <mrow>
+                                    <mi>p</mi>
+                                    <mo>,</mo>
+                                    <mi>ext</mi>
+                                </mrow>
+                            </msub>
+                            <mo>+</mo>
+                            <mi>U</mi>
+                            <mo>)</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mi>&#x3B4;W</mi>
+                        <mo>+</mo>
+                        <mi>&#x3B4;Q</mi>
+                    </math>
+                    <p>avec W le travail et Q la chaleur.</p>
+
+                    <h4>Application</h4>
+    
+                    <p>L'application de la première loi nous permet déjà de comprendre le fonctionnement 
+                        d'un moteur thermique (ex. à vapeur ou à combustion).<br />
+                        On va simplifier le système, c'est à dire que notre moteur est au repos et est posé au sol, donc
+                        <math>
+                            <msubsup>
+                                <mi>Ɛ</mi>
+                                <mn>k</mn>
+                                <mn>M</mn>
+                            </msubsup>
+                            <mo>=</mo>
+                            <msub>
+                                <mi>Ɛ</mi>
+                                <mrow>
+                                    <mi>p</mi>
+                                    <mo>,</mo>
+                                    <mi>ext</mi>
+                                </mrow>
+                            </msub>
+                            <mo>=</mo>
+                            <mn>0</mn>
+                        </math>,
+                        on a alors :
+                    </p>
+                    <math display="block">
+                        <mi>&#x394;</mi>
+                        <mi>U</mi>
+                        <mo>=</mo>
+                        <mi>W</mi>
+                        <mo>+</mo>
+                        <mi>Q</mi>
+                    </math>
+
+                    <p>Lors de la combustion :</p>
+                    <ul>
+                        <li>le gaz reçoit une chaleur Q ;</li>
+                        <li>il se dilate ;</li>
+                        <li>il fournit un travail mécanique W au piston ;</li>
+                    </ul>
+
+                    <p>Or un moteur fonctionne selon un cycle : à la fin d'un cycle, le système revient à son état initial. 
+                        On a donc :</p>
+                    <math display="block">
+                        <mi>&#x394;</mi>
+                        <msub>
+                            <mi>U</mi>
+                            <mn>cycle</mn>
+                        </msub>
+                        <mo>=</mo>
+                        <mi>0</mi>
+                    </math>
+
+                    <p>ainsi :</p>
+                    <math display="block">
+                        <msub>
+                            <mi>Q</mi>
+                            <mn>cycle</mn>
+                        </msub>
+                        <mo>=</mo>
+                        <msub>
+                            <mi>W</mi>
+                            <mn>cycle</mn>
+                        </msub>
+                    </math>
+
+                    <p>Le travail mécanique produit sur un cycle provient donc du transfert thermique reçu. <br />
+                        La première loi exprime ici simplement la conservation de l'énergie.</p>
+
+                    <a href="#top" aria-label="Retour en haut de la page">
+                        <span aria-hidden="true">&uArr; Retour</span>
+                    </a>
+                </section>
+
+                <section aria-labelledby="loi2">
+                    <h2 id="loi2">Deuxième principe de la thermodynamique : principe de l'évolution de l'énergie</h2>
+                    
+                    <h3>Enoncé</h3>
+
+                    <p>Pour toute transformation d'un système thermodynamique, on définit une fonction d'état noté S, 
+                        appelé entropie, qui se crée et qui ne diminue pas avec le temps.<br />
+                        La définition de l'entropie s'écrit :</p>
+                    <math display="block">
+                        <msub>
+                            <mi>S</mi>
+                            <mn>créer</mn>
+                        </msub>
+                        <mo>=</mo>
+                        <mi>&#x394;</mi>
+                        <msub>
+                            <mi>S</mi>
+                            <mn>syst</mn>
+                        </msub>
+                        <mo>+</mo>
+                        <mi>&#x394;</mi>
+                        <msub>
+                            <mi>S</mi>
+                            <mn>ext</mn>
+                        </msub>
+                        <mo>&#x2265;</mo>
+                        <mi>0</mi>
+                    </math>
+
+                    <p>on aura :</p>
+                    <ul>
+                        <li>
+                            <math>
+                                <msub>
+                                    <mi>S</mi>
+                                    <mn>créer</mn>
+                                </msub>
+                                <mo>=</mo>
+                                <mi>0</mi>
+                            </math>
+                            dans le cas d'une transformation réversible ;
+                        </li>
+                        <li>
+                            <math>
+                                <msub>
+                                    <mi>S</mi>
+                                    <mn>créer</mn>
+                                </msub>
+                                <mo>></mo>
+                                <mi>0</mi>
+                            </math>
+                            dans le cas d'une transformation irréversible ;
+                        </li>
+                    </ul>
+                    <p>L'entropie s'exprime en joules par kelvin (J/K).</p>
+                    
+
+                    <h3>Explication de l'énoncé, bilan énergétique et application</h3>
+                    <h4>Explication</h4>
+                    <p>L'entropie est une fonction extensive, créée par une transformation et établie l'irréversibilité 
+                        des phénomènes physiques. C'est donc une fonction d'état qui dépend de la taille et de la quantité de matière. 
+                        Elle est également additive, ce qui prouve bien l'extensivité de la fonction.</p>
+
+                    <h4>Bilan énergétique</h4>
+                    <p>Pour trouver l'entropie il faut qu'il y ai eu une transformation, elle ne dépend pas du chemin mais il 
+                        faut connaître le transfert de chaleur et la température.<br />
+                        Pour une transformation réversible, on aura :</p>
+
+                    <math display="block">
+                        <msub>
+                            <mi>dS</mi>
+                            <mi>syst</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <mfrac>
+                            <msub>
+                                <mi>Q</mi>
+                                <mi>rev</mi>
+                            </msub>
+                            <mi>T</mi>
+                        </mfrac>
+                    </math>
+
+                    <p>pour une transformation irréversible :</p>
+                    <math display="block">
+                        <msub>
+                            <mi>dS</mi>
+                            <mi>syst</mi>
+                        </msub>
+                        <mo>></mo>
+                        <mfrac>
+                            <msub>
+                                <mi>Q</mi>
+                                <mi>irrev</mi>
+                            </msub>
+                            <mi>T</mi>
+                        </mfrac>
+                    </math>
+
+                    <h4>Application</h4>
+                    <p>Lors d'une transformation réelle, une partie de l'énergie est dissipée et ne peut pas être entièrement 
+                        convertie en travail mécanique. Cette dissipation est liée à l'augmentation d'entropie S du système 
+                        et de son environnement.</p>
+
+                    <p>Petit exemple avec le moteur thermique :</p>
+                    <ul>
+                        <li>
+                            le moteur reçoit une chaleur 
+                            <math>
+                                <msub>
+                                    <mi>Q</mi>
+                                    <mi>reçue</mi>
+                                </msub>
+                            </math> 
+                            du carburant ;
+                        </li>
+                        <li>il fournit un travail W ;</li>
+                        <li>une partie de l'énergie est perdue sous forme de chaleur non récupérable, par exemple dans 
+                            l'échappement ou le refroidissement ;</li>
+                    </ul>
+
+                    <p>Avec ça, introduisons la notion de rendement : </p>
+                    <math display="block">
+                        <mi>η</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <msub>
+                                <mi>W</mi>
+                                <mi>utile</mi>
+                            </msub>
+                            <msub>
+                                <mi>Q</mi>
+                                <mi>reçue</mi>
+                            </msub>
+                        </mfrac>
+                        <mo>&le;</mo>
+                        <mn>1</mn>
+                    </math>
+
+                    <p>Le rendement est toujours inférieur ou égal à 1, c'est le taux de transformation de 
+                        l'énergie (thermique ou électrique) en énergie mécanique.</p>
+                    <p>Une partie de l'énergie reçue par le moteur est toujours dissipée. Cette perte, traduisible par
+                         l'augmentation de l'entropie, explique pourquoi il est impossible d'avoir un rendement de 100% 
+                         pour un moteur réel.</p>
+
+                    <a href="#top" aria-label="Retour en haut de la page">
+                        <span aria-hidden="true">&uArr; Retour</span>
+                    </a>
+                </section>
+                
+                <section aria-labelledby="loi3">
+                    <h2 id="loi3">Troisième principe de la thermodynamique : principe de Nernst</h2>
+                    <h3>Enoncé</h3>
+                    <p>Le troisième principe a été établi par Nernst et, comme nous l'avons vu en introduction, il nous dit : 
+                        <cite>"Il est impossible d'atteindre le zéro absolu de la température par un nombre fini de 
+                            transformations."</cite></p>
+                    <p>On peut aussi dire que lorsque la température tend vers le zéro absolu (0 K), l'entropie d'un cristal 
+                        parfait tend vers zéro.<br />
+                        On le défini par : </p>
+                    <math display="block">
+                        <munder>
+                            <mi>lim</mi>
+                            <mrow>
+                                <mi>T</mi>
+                                <mo>→</mo>
+                                <mn>0</mn>
+                            </mrow>
+                        </munder>
+                        <mi>S(T)</mi>
+                        <mo>=</mo>
+                        <mn>0</mn>
+                    </math>
+
+                    <h3>Explication</h3>
+                    <p>Le principe nous dit simplement qu'à 0K l'agitation thermique disparaît, le système est dans son état 
+                        fondamental unique et il n'y a plus de désordre macroscopique. On a donc :</p>
+                    <math>
+                        <mi>S</mi>
+                        <mo>=</mo>
+                        <msub>
+                            <mi>k</mi>
+                            <mi>b</mi>
+                        </msub>
+                        <mi>lnΩ</mi>
+                    </math>
+
+                    <ul>
+                        <li>
+                            <math>
+                                <msub>
+                                    <mi>k</mi>
+                                    <mi>b</mi>
+                                </msub>
+                            </math>
+                            est la constante de Boltzmann
+                            (
+                            <math>
+                                <msub>
+                                    <mi>k</mi>
+                                    <mi>b</mi>
+                                </msub>
+                                <mo>=</mo>
+                                <mrow>
+                                    <mn>1,380 649</mn>
+                                    <mo>&times;</mo>
+                                    <msup>
+                                    <mn>10</mn>
+                                    <mrow>
+                                        <mo>-</mo>
+                                        <mn>23</mn>
+                                    </mrow>
+                                    </msup>
+                                </mrow>
+                            </math>
+                            J.K<sup>-1</sup>
+                            ) ;
+                        </li>
+                        <li>Ω est le nombre de micro-états accessibles ;</li>
+                    </ul>
+
+                    <p>A 0 K on a :</p>
+                    <math display="block">
+                        <mi>Ω</mi>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                        <mo>&rArr;</mo>
+                        <mi>S</mi>
+                        <mo>=</mo>
+                        <mn>0</mn>
+                    </math>
+
+                    <p>La conséquence c'est qu'il nous faudrait un nombre infini de transformation pour atteindre le 0 K. 
+                        En fait, il devient de plus en plus difficile de récupérer de l'énergie au fur et à mesure qu'on se 
+                        rapproche du 0 absolu.<br />
+                        C'est une limite asymptotique, comme lorsque l'on essaie d'atteindre la vitesse de la lumière avec un électron.</p>
+                    
+                    <a href="#top" aria-label="Retour en haut de la page">
+                        <span aria-hidden="true">&uArr; Retour</span>
+                    </a>
+                    
+                </section>
+
+                <section aria-labelledby="loi0">
+                    <h2 id="loi0">Le principe zéro</h2>
+                    <p>Le principe zéro nous dit que si deux systèmes sont en équilibre thermodynamique avec un troisième, alors 
+                        ils sont en équilibre entre eux.</p>
+                    <p>On a trois milieu A, B et C, si :</p>
+                    <math display="block">
+                        <msub>
+                            <mi>T</mi>
+                            <mi>A</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <msub>
+                            <mi>T</mi>
+                            <mi>B</mi>
+                        </msub>
+                        <mi> et </mi>
+                        <msub>
+                            <mi>T</mi>
+                            <mi>B</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <msub>
+                            <mi>T</mi>
+                            <mi>C</mi>
+                        </msub>
+                    </math>
+
+                    <p>alors :</p>
+                    <math display="block">
+                        <msub>
+                            <mi>T</mi>
+                            <mi>A</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <msub>
+                            <mi>T</mi>
+                            <mi>C</mi>
+                        </msub>
+                    </math>
+
+                    <p>Le premier et deuxième principe ont été établis bien avant, mais le principe zéro fait office de principe fondamental.</p>
+                
+                    <a href="#top" aria-label="Retour en haut de la page">
+                        <span aria-hidden="true">&uArr; Retour</span>
+                    </a>
+                </section>
+
+                <section aria-labelledby="conclusion">
+                    <h2 id="conclusion">Conclusion</h2>
+                    <p>La thermodynamique joue un rôle fondamental dans notre compréhension du monde qui nous entoure (milieu macroscopique).<br />
+                        Cette petite présentation ne représente qu'une infime partie de la surface de ce domaine. 
+                        Si on voulait être plus précis on parlerait de thermodynamique classique, car on aurait aussi 
+                        pu parler de la thermodynamique statistique (milieu microscopique) ou encore de la thermodynamique relativiste qui permet de démontrer 
+                        l'invariance de l'entropie.</p>
+                    
+                    <a href="#top" aria-label="Retour en haut de la page">
+                        <span aria-hidden="true">&uArr; Retour</span>
+                    </a>
+                
+                    </section>
+
+                <section aria-labelledby="ref">
+                    <h2 id="ref">Références</h2>
+
+                    <table>
+                        <caption>Ouvrages de référence en thermodynamique</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Auteur</th>
+                                <th scope="col">Titre</th>
+                                <th scope="col">Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>J. Perez</td>
+                                <td><cite>Thermodynamique, fondement et application</cite></td>
+                                <td>Manuel universitaire</td>
+                            </tr>
+                            <tr>
+                                <td>Louis De Broglie</td>
+                                <td><cite>La Thermodynamique relativiste et la Thermodynamique cachée des particules</cite></td>
+                                <td>Essai scientifique</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+        </main>
+    </body>
+</html>
